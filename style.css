@@ -1,0 +1,84 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+}
+body {
+    background-color:  rgb(29, 180, 180);
+}
+
+:root {
+    --bg-primary: rgb(29, 180, 180);
+    --bg-secondary: #eaeaea;
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --icons-primary: rgb(228, 11, 145);
+    --icons-secondary: 
+
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: var(--bg-primary);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 2px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 30px;
+    margin: 8px;
+    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: var(--icons-primary);
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .8em;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        width: 95%;
+    }
+}
